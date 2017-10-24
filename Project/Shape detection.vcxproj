@@ -127,10 +127,10 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>..\OpenCV\build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\Dependencies\OpenCV\build\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
-      <AdditionalLibraryDirectories>..\OpenCV\build\x64\vc14\lib\</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>..\Dependencies\OpenCV\build\x64\vc14\lib\</AdditionalLibraryDirectories>
       <AdditionalDependencies>opencv_highgui2413d.lib;opencv_core2413d.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
