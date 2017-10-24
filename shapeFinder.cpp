@@ -79,10 +79,10 @@ void imageAnalyse() {
             isFlat = false;
 
         if (i + step * 2 < scan.size())
-            dE.push_back(deformationIndice(i, scan[i], scan[i + step], scan[i + (step * 2)]));
+            dE.push_back(deformationIndice(i, scan[i], scan[i + step], scan[i + step * 2]));
         }
 
-    int sp = spikesCounter(dE);
+    int sp = spikesCounter (dE);
     if (sp == 0 && !isFlat)
         std::cout << "CIRCLE !!" << std::endl;
     else
@@ -91,7 +91,7 @@ void imageAnalyse() {
 
 int main( int argc, char** argv )
     {
-    img = imread( argv[1], 1 );
+    img = imread (argv[1], 1);
     imagePreprocessing();
     imageAnalyse();
     return 0;
