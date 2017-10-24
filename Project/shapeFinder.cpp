@@ -69,7 +69,7 @@ void imageAnalyse() {
         if (bw - fw > 0)
             scan.push_back(bw - fw);
         }
-    
+
     bool isFlat = true;
     int tmp = scan[0];
     vector<int> dE;
